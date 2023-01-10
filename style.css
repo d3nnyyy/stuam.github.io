@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+    position: relative;
+    width: 100%;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    padding: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-image: linear-gradient(to bottom, #0a0a66, #141c85, #1b2ea6, #1b40c8, #1254eb); */
+    border-bottom: 0a0a66 solid 0.1em;
+    z-index: 1000;
+
+}
+
+header img {
+    margin: 15px 15px;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    color: rgb(228, 253, 5);
+    text-decoration: none;
+    margin-right: 30px;
+    letter-spacing: 0.1em;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+
+.button a {
+    position: relative;
+    color: rgb(228, 253, 5);
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin: 0px 10px;
+    padding: 5px 10px;
+}
+
+.button a:hover {
+    background-color: rgb(228, 253, 5);
+    color: #0a0a66;
+    border-radius: 15px;
+}
+
+.install {
+    background-color: rgb(228, 253, 5);
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.install p {
+    color: #0a0a66;
+    text-decoration: none;
+    text-align: center;
+    padding: 2px;
+
+}
+
+#storeList {
+    color: black;
+    position: absolute;
+    display: none;
+    margin-right: 15%;
+    margin-top: 195px;
+    border-radius: 5px;
+    /* background: linear-gradient(177deg, rgba(16,70,159,1) 24%, rgba(237,255,0,1) 83%); */
+    background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    border: 1px black solid;
+}
+
+#storeList a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+    margin: auto 15px;
+}
+
+#storeList a:hover {
+    color: #fff
+}
+
+body {
+    background: hsla(221, 45%, 73%, 1);
+    background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1);
+    min-height: 65em;
+    min-width: 100em;
+}
+
+.up {
+    background: url(imgs/uaGames.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+}
+
+.up .tr {
+    visibility: hidden;
+    width: 100%;
+    padding-bottom: 600px;
+}
+
+.store-nav {
+    width: 75%;
+    padding: 15px 10px;
+    margin-top: 70px;
+    position: absolute;
+    margin: 30px 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(26, 156, 232, 0.267);
+    border-radius: 10px;
+}
+
+.store-nav .panel {
+    justify-content: space-around;
+    padding: 5px 30px;
+}
+
+.store-nav .panel a {
+    color: rgb(228, 253, 5);
+    text-decoration: none;
+    padding: 5px 30px;
+}
+
+.store-nav input {
+    justify-content: right;
+    border-radius: 5px;
+}
+
+.typesofgames {
+    display: flex;
+    position: absolute;
+    left: 180px;
+    padding-top: 3%;
+    padding-right: 5%;
+    margin-right: 2%;
+}
+
+.main .bd {
+    margin-bottom: 500px;
+    display: none;
+}
+
+.main {
+    background: hsla(221, 45%, 73%, 1);
+    background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1);
+    min-height: 65em;
+}
+
+.gamesBar {
+    position: absolute;
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    /* background-color: green; */
+}
+
+.gamesBar h2 {
+    position: absolute;
+    display: inline;
+    margin-left: 30%;
+    padding: 30px auto;
+    font-size: 20px;
+    text-transform: uppercase;
+    /* color:rgb(228, 253, 5); */
+    color: #fff;
+    letter-spacing: 0.1em;
+
+}
+
+
+
+#gamesImgs {
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    width: 1000px;
+    height: 353px;
+    background: hsla(221, 45%, 73%, 1);
+    background: linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#9BAFD9", endColorstr="#103783", GradientType=1);
+    box-shadow: 1px 1px linear-gradient(90deg, hsla(221, 45%, 73%, 1) 0%, hsla(220, 78%, 29%, 1) 100%);
+}
+
+#csgo {
+    width: 1000px;
+    height: 353px;
+    /* display: none; */
+    transition: 200ms ease-in-out;
+}
+
+#nba {
+    width: 1000px;
+    height: 353px;
+    display: none;
+}
+
+#f1 {
+    width: 1000px;
+    height: 353px;
+    display: none;
+}
+
+#gamesImgs .current {
+    position: absolute;
+    width: 616px;
+    height: 353px;
+    /* background: url(imgs/csgo/main.jpg); */
+}
+
+#gamesImgs .name {
+    position: relative;
+    color: #fff;
+    left: 630px;
+    font-size: 20px;
+
+    display: inline;
+
+}
+
+#gamesImgs .available {
+    display: inline;
+    position: absolute;
+    color: #fff;
+    left: 640px;
+    font-size: 18px;
+    top: 265px;
+}
+
+#gamesImgs .top {
+    display: inline;
+    position: absolute;
+    color: #fff;
+    left: 640px;
+    font-size: 13px;
+    top: 295px;
+    background-color: rgba(108, 122, 137, 0.4);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#gamesImgs .cost {
+    display: inline;
+    position: absolute;
+    color: rgb(234, 255, 253);
+    left: 930px;
+    font-size: 16px;
+    top: 310px;
+    padding: 5px;
+}
+
+.current {
+    z-index: 1000;
+}
+
+#gamesImgs .cs1 img {
+    display: inline;
+    position: absolute;
+    width: 170px;
+    height: 100px;
+    margin: 40px 5px 5px 630px;
+    /* background: url(imgs/csgo/1.jpg) no-repeat center center; 
+    background-size: cover; */
+}
+
+#gamesImgs .cs2 img {
+    display: inline;
+    position: absolute;
+    width: 170px;
+    height: 100px;
+    margin: 160px 2px 2px 630px;
+    /* background: url(imgs/csgo/2.jpg) no-repeat center center; 
+    background-size: cover; */
+}
+
+#gamesImgs .cs3 img {
+    display: inline;
+    position: absolute;
+    width: 170px;
+    height: 100px;
+    margin: 40px 2px 2px 820px;
+    /* background: url(imgs/csgo/3.jpg) no-repeat center center; 
+    background-size: cover; */
+}
+
+#gamesImgs .cs4 img {
+    display: inline;
+    position: absolute;
+    width: 170px;
+    height: 100px;
+    margin: 160px 2px 2px 820px;
+    /* background: url(imgs/csgo/4.jpg) no-repeat center center; 
+    background-size: cover; */
+}
+
+#addcsgoInfo,
+#addnbaInfo,
+#addf1Info {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    margin-left: 1015px;
+    margin-top: 40px;
+    padding: 10px;
+    background: hsla(221, 45%, 73%, 1);
+    z-index: 10;
+}
+
+#addcsgoInfo h3,
+#addnbaInfo h3,
+#addf1Info h3 {
+    font-weight: 100;
+    font-size: 15px;
+    display: flex;
+}
+
+#addcsgoInfo p,
+#addnbaInfo p,
+#addf1Info p {
+    font-size: 10px;
+    padding: 2px;
+}
+
+#addcsgoInfo .tags,
+#addnbaInfo .tags,
+#addf1Info .tags {
+    font-size: 12px;
+}
+
+#addcsgoInfo li,
+#addnbaInfo li,
+#addf1Info li {
+    padding: 2px;
+    position: relative;
+    font-size: 10px;
+    list-style: none;
+    display: inline;
+    background-color: rgba(108, 122, 137, 0.4);
+    border-radius: 5px;
+    color: #fff;
+}
+
+/* .arrowbg {
+    position: inherit;
+    background-color: hsla(220, 78%, 29%, 1);
+    width:55px;
+    height: 100px;
+    margin-top: 170px;
+    margin-left: 27.5%;
+
+} */
+
+#arrow-left {
+    z-index: 1;
+    position: absolute;
+    left: -40px;
+    top: 150px;
+    position: absolute;
+    border-left: 0.5rem solid white;
+    border-bottom: 0.5rem solid white;
+    width: 2.3rem;
+    height: 2.3rem;
+    transform: rotate(45deg);
+}
+
+#arrow-right {
+    z-index: 1;
+    right: -40px;
+    top: 150px;
+    position: absolute;
+    border-left: 0.5rem solid white;
+    border-bottom: 0.5rem solid white;
+    width: 2.3rem;
+    height: 2.3rem;
+    transform: rotate(225deg);
+}
+
+#arrow-leftbg {
+    position: absolute;
+    left: -55px;
+    top: 118px;
+    padding: 50px 25px;
+    background: hsla(221, 45%, 73%, 1);
+    background: linear-gradient(270deg, hsla(221, 45%, 73%, 0.3) 0%, hsla(220, 78%, 29%, 0.3) 100%);
+    border-radius: 3px;
+}
+
+#arrow-rightbg {
+    position: absolute;
+    right: -55px;
+    top: 118px;
+    padding: 50px 25px;
+    background: hsla(221, 45%, 73%, 1);
+    background: linear-gradient(90deg, hsla(221, 45%, 73%, 0.3) 0%, hsla(220, 78%, 29%, 0.3) 100%);
+    border-radius: 3px;
+}
+
+/* #arrow-rightbg:hover {
+    background: hsla(221, 45%, 73%, 1);
+    background: linear-gradient(90deg, hsla(221, 45%, 73%, 0.7) 0%, hsla(220, 78%, 29%, 0.3) 100%)
+} */
+
+.thumbs {
+    text-align: center;
+    position: absolute;
+    top: 370px;
+    left: 370px;
+}
+
+.thumb {
+    position: relative;
+    z-index: 10000;
+    width: 30px;
+    height: 15px;
+    background: hsla(221, 45%, 73%, 1);
+    border-radius: 5px;
+    display: inline-block;
+}
